@@ -3,7 +3,7 @@
   <airframe_version_major>1</airframe_version_major>
   <airframe_version_minor>1</airframe_version_minor>
   <airframe_group name="Airship" image="Airship">
-    <airframe name="Cloudship" id="2507" maintainer="John Doe &lt;john@example.com&gt;">
+    <airframe name="CLOUDSHIP" id="2507" maintainer="John Doe &lt;john@example.com&gt;">
       <class>Airship</class>
       <type>Airship</type>
       <output name="Motor1">starboard thruster</output>
@@ -137,6 +137,19 @@
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
       <type>Quadrotor x</type>
+    </airframe>
+    <airframe name="Custom Tilt-Rotor Quadcopter" id="4080" maintainer="Custom Drone Builder &lt;builder@example.com&gt;">
+      <class>Copter</class>
+      <maintainer>Custom Drone Builder &lt;builder@example.com&gt;</maintainer>
+      <type>Quadrotor x</type>
+      <output name="Motor1" angle="45" direction="CW">front right, CW (tiltable)</output>
+      <output name="Motor2" angle="225" direction="CW">back left, CW (fixed)</output>
+      <output name="Motor3" angle="135" direction="CCW">front left, CCW (tiltable)</output>
+      <output name="Motor4" angle="315" direction="CCW">back right, CCW (fixed)</output>
+      <output name="Servo1">front tilt mechanism</output>
+      <output name="Servo2">spare servo</output>
+      <output name="Servo3">spare servo</output>
+      <output name="Servo4">spare servo</output>
     </airframe>
     <airframe name="S500 Generic" id="4014" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;">
       <class>Copter</class>
